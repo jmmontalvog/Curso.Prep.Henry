@@ -36,9 +36,8 @@ function invocarMetodo(objeto, metodo) {
   // Nada necesita ser devuelto ("returned")
   // Tu código:
 
- //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
- //xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
+console.log(suma);
 
 }
 
@@ -192,27 +191,15 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:    
 
-  producto['calcularPrecioDescuento'] = {
-          calcularDescuento (){
-           let desc = 0;
-           return desc = descproducto['precio'] - (producto['precio'] * producto['porcentajeDeDescuento']);
-           //return desc;
+  var precioConDescuento  = function calcularDescuento (){
+           var desc = 0; 
+           desc = producto['precio'] - (producto['precio'] * producto['porcentajeDeDescuento'])
+           return desc;
          }
-  };
 
+         
+         producto['calcularPrecioDescuento'] = precioConDescuento;
 
-
-
-
-
-    //producto['calcularPrecioDescuento'] =  producto['precio'] - (producto['precio'] * producto['porcentajeDeDescuento'])    
-
-
-  //producto['calcularPrecioDescuento'] =  producto['precio'] - (producto['precio'] * producto['porcentajeDeDescuento']);
-    
-
-  console.log(producto.calcularPrecioDescuento);
-  //console.log(producto);
   return producto;
   
   //
