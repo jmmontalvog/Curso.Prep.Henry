@@ -36,8 +36,8 @@ function invocarMetodo(objeto, metodo) {
   // Nada necesita ser devuelto ("returned")
   // Tu código:
 
+  objeto[metodo]();
 
-console.log(suma);
 
 }
 
