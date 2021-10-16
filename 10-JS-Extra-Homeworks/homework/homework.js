@@ -191,13 +191,14 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí:
 
-  let cont = 0;
+  //let cont = 0;
   let arreglo3 = [];
   for(let i = 0; i < arreglo1.length; i++){
     for(let j = 0; j < arreglo2.length; j++){
       if(arreglo1[i] === arreglo2[j]){
-        arreglo3[cont] = arreglo1[i];
-        cont++;
+        //arreglo3[cont] = arreglo1[i];
+        //cont++;
+        arreglo3.push(arreglo1[i]);
       }
     }
   }
