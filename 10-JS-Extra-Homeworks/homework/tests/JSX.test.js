@@ -61,7 +61,7 @@ describe('deleteAbc(cadena)', function() {
 
 describe('sortArray(array)', function() {
   it('should return a new array in increasing order', function() {
-    expect(sortArray(["You", "are", "beautiful", "looking"])).toEqual(["You", "are", "looking", "beautiful"]);
+    expect(sortArray(["You", "are", "beautiful", "looking"])).toEqual(["You", "are", "looking", "beautiful"]); 
     expect(sortArray(["pera", "manzana", "alcaucil", "papa"])).toEqual(["pera", "papa", "manzana", "alcaucil"]);
   });
 });
